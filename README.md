@@ -33,28 +33,55 @@ Portanto no cálculo acima os animais sorteados foram:
 Podemos observar que o *elefante* foi duas vezes sorteado, e isso é normal de acontecer, entretanto é necessário saber que dependendo do seu jogo você só ganhará uma vez ou até mesmo nenhuma, vamos entender sobre cada jogo que pode ser realizado usando os números e a sorte.
 
 Temos várias opções que resultam em diferentes multiplicadores
-- **Grupo**: você não joga no número, mas no animal, cada animal possui 4 números, logo possui quatro vezes mais chance de ganhar e por isso o retorno é menor. Nos exemplos acima você ganharia duas vezes.
+- **Grupo**: você não joga no número, mas no animal, cada animal possui 4 números, logo possui quatro vezes mais chance de ganhar e por isso o retorno é menor. Nos exemplos acima você ganharia duas vezes, se tivesse jogado do 1 ao 5 prêmio.
 - **Dezena**: os dois últimos números.
 - **Centena**: mais díficil de acertar e por isso já possui retorno maior que o anterior.
 - **Milhar**: são os 4 números que são sorteados, possui altíssimo retorno.
 
 Ainda possui alguns jogos mais personalizados, como por exemplo:
 - **Milhar invertida**: nessa não é apenas a inversão da milhar, mas a presença dos 4 digitos jogados independente da ordem, logo jogando a milhar *1856* haveria vitoria pois os 4 digitos estão presentes nas duas primeiras jogadas.
-- **Centena invertida**: segue a mesma lógica da milhar, mas tem que estar presente 3 digitos, pois é uma centena
+- **Centena invertida**: segue a mesma lógica da milhar, mas tem que estar presente 3 digitos, pois é uma centena.
 - **Dezena invertida**: mesma lógica do anterior, mas apenas 2 dígitos pois é dezena.
 
-E por diante, possui várias formas de jogar, além claro, dos locais, como por exemplo: *Rio de Janeiro, São Paulo, Goiás, Minas Gerais, Bahia, Paraíba e Ceará* são onde acontecem alguns jogos, vale resaltar que é somente o último em que o [jogo é legalizado](https://g1.globo.com/ce/ceara/noticia/2021/11/05/justica-do-ceara-autoriza-exploracao-do-jogo-do-bicho.ghtml)
+E por diante, possui várias formas de jogar, além claro, dos locais, como por exemplo: *Rio de Janeiro, São Paulo, Goiás, Minas Gerais, Bahia, Paraíba e Ceará* são onde acontecem alguns jogos, vale resaltar que é somente o último em que o [jogo é legalizado](https://g1.globo.com/ce/ceara/noticia/2021/11/05/justica-do-ceara-autoriza-exploracao-do-jogo-do-bicho.ghtml).
 
+### Papeis e tipos de usuários
+- Administrador
+- Cambista
+- Cliente
+- Não logado
 
 ### Funções
+#### Usuários não logados
 - Criar e acessar conta
+- Ver resultados
+#### Usuários logados
 - Pagar aposta via PIX (única forma de pagamento, por enquanto)
 - Apostar
 - Verificar aposta
+- Ver resultados
+#### Cambista
+- Fazer jogo
+#### Administrador
+- Adicionar ou remover resultados
+- Adicionar ou remover jogos e horários
 
-<!-- ### Rotas
+### Rotas
 #### Da aplicação
-#### Da API -->
+
+| HTTP | URL | DESCRIÇÃO
+|------|-----|----------|
+| POST | /login | acessar conta |
+| POST | /signup | criar conta |
+| GET | /list-game | listar resultados |
+| GET | /play-game | jogar |
+| POST | /verify-game/{poule} | verificar jogo |
+| POST | /admin/add-result | adicionar resultado |
+| POST | /admin/rem-result | remover resultado |
+| POST | /admin/add-game | adicionar jogo e horário |
+| POST | /admin/rem-game | remover jogo e horário |
+| POST | /home | pagina do usuário |
+<!-- #### Da API -->
 
 ### Fontes
 <!-- ![Modelagem do banco de dados]() -->
