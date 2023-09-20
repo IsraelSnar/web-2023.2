@@ -39,9 +39,9 @@ Temos várias opções que resultam em diferentes multiplicadores
 - **Milhar**: são os 4 números que são sorteados, possui altíssimo retorno.
 
 Ainda possui alguns jogos mais personalizados, como por exemplo:
-- **Milhar invertida**: como o nome diz, pega a milhar sorteada, e inverte ela, exemplo: o primeiro prêmio na milhar invertida seria *8651 6815*
-- **Centena invertida**: segue a mesma lógica da milhar, o resultado do primeiro prêmio seria: *651 815*
-- **Dezena invertida**: o resultado do primeiro prêmio seria: *51 15*
+- **Milhar invertida**: nessa não é apenas a inversão da milhar, mas a presença dos 4 digitos jogados independente da ordem, logo jogando a milhar *1856* haveria vitoria pois os 4 digitos estão presentes nas duas primeiras jogadas.
+- **Centena invertida**: segue a mesma lógica da milhar, mas tem que estar presente 3 digitos, pois é uma centena
+- **Dezena invertida**: mesma lógica do anterior, mas apenas 2 dígitos pois é dezena.
 
 E por diante, possui várias formas de jogar, além claro, dos locais, como por exemplo: *Rio de Janeiro, São Paulo, Goiás, Minas Gerais, Bahia, Paraíba e Ceará* são onde acontecem alguns jogos, vale resaltar que é somente o último em que o [jogo é legalizado](https://g1.globo.com/ce/ceara/noticia/2021/11/05/justica-do-ceara-autoriza-exploracao-do-jogo-do-bicho.ghtml)
 
